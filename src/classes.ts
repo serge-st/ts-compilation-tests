@@ -37,7 +37,7 @@ Test.obj.b.c = 42
 // * OK 😭 (js runtime) -> No Errors (🤓 but if --noEmit flag is enabled in the tsconfig.json, the output file will not be generated).
 // Test.constObj.a = 42
 // * Error (compilation) -> Cannot assign to 'c' because it is a read-only property.
-// OK 😭 (js runtime) -> No Errors (🤓 but if --noEmit flag is enabled in the tsconfig.json, the output file will not be generated).
+// * OK 😭 (js runtime) -> No Errors (🤓 but if --noEmit flag is enabled in the tsconfig.json, the output file will not be generated).
 // Test.constObj.b.c = 42
 
 console.log('readonly const object parameter', Test.constObj)
