@@ -20,9 +20,9 @@ class Test {
 // Test.a = 42
 // console.log('readonly parameter', Test.a)
 
-// * OK 😭 (compilation/js runtime) -> No Errors
+// * OK (compilation/js runtime) -> No Errors (expected behavior since readonly works as const, not allowing to re-assing but allowing mutability)
 Test.obj.a = 42
-// * OK 😭 (compilation/js runtime) -> No Errors
+// * OK (compilation/js runtime) -> No Errors (expected behavior since readonly works as const, not allowing to re-assing but allowing mutability)
 Test.obj.b.c = 42
 // console.log('readonly object parameter', Test.obj)
 
